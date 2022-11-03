@@ -1,0 +1,22 @@
+server:
+  port: 9001
+
+spring:
+  data:
+    cassandra:
+      keyspace-name: predict_game
+      port: 9042
+      local-datacenter: datacenter1
+      contact-points: 192.168.0.108
+
+database:
+  url: "jdbc:postgresql://192.168.0.108:26257/predict_number"
+  username: "root"
+  password: "root"
+  driver: "org.postgresql.Driver"
+  modelPackage: "org.test.model"
+
+redis:
+  url: "192.168.0.108"
+  port: 6399
+
